@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Analizador Lexico</title>
+        <style>
+            .box{
+                display : flex;
+                justify-content:center;
+                align-items: flex-start;
+                flex-direction: row;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+            .box__item{
+                display:block;
+                padding:10px;
+            }
+
+            .box__list{
+                display:flex;
+                flex-direction: column;
+                align-items:center;
+            }
+
+            .box__list__item{
+                margin:5px;
+                text-decoration: underline;
+                border: solid 1px black;
+            }
+
+            .w-70{
+                width: 70%;
+            }
+
+            .w-30{
+                width:30%
+            }
+
+            .box__item__area{
+                width: 100%;
+                height:500px;
+            }
+
+            .footer{
+                text-align:center;
+            }
+
+            .footer__button{
+                margin:10px;
+                padding:5px;
+                color: white;
+                background:black;
+                border-radius: 5px;
+                text-align: center;
+                border: 1px solid black;
+            }
+
+            .footer__button:hover{
+                color: black;
+                background:white;
+                cursor: pointer;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box__item w-70">
+                <textarea placeholder="Texto del archivo..." class="box__item__area" id="textarea-texto"></textarea>
+            </div>
+            <div class="box__item w-30">
+                <div class="box__list" id="box-list">
+                    <span class="box__list__item">Resultados del analizador Lexico</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <input class="footer__button w-70" value="Analizar Texto" type="submit" id="input-get-data">
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/script.js"></script>
+</html>
