@@ -323,7 +323,8 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/getData', (req, res) => {const text = syncReadFile('./example.txt');
+app.get('/getData', (req, res) => {
+    const text = syncReadFile('./example.txt');
     const arr = text.split(/\r?\n/);
     arr.forEach((s) => {
         const w = s.split("\t").filter(element => element);
